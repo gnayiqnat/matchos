@@ -1,0 +1,17 @@
+@import "tailwindcss";
+@import "@heroui/styles";
+
+@custom-variant dark (&:is(.dark *));
+
+:root {
+	--foreground: oklch(0.3301 0.0269 140.78);
+	--accent: oklch(0.6235 0.0838 120.53);
+	--accent-foreground: oklch(0.8522 0.0748 108.73);
+	--background: oklch(0.9679 0.0045 78.3);
+	--background-secondary: oklch(0.9242 0.0147 110.89);
+}
+
+@theme {
+	--font-sans: "font", sans-serif;
+	--font-mono: "monospace", monospace;
+}
