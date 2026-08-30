@@ -35,9 +35,9 @@ export default function Home() {
 				fill={true}
 				className='object-cover opacity-60'
 			/>{' '}
-			<section className='flex items-center h-full px-30'>
+			<section className='flex items-center max-h-screen py-55 px-30'>
 				<div className='fixed top-0 left-0 -z-1 '></div>
-				<div className='flex flex-col justify-center gap-10 -mt-60'>
+				<div className='flex flex-col justify-center gap-10'>
 					<div className='flex flex-col gap-8'>
 						{/* <Chip
 							size='lg'
@@ -72,16 +72,13 @@ export default function Home() {
 						</Button>
 					</div>
 				</div>
-				{/* <Image src={'/stock1-nobg.png'} alt='stc' width={500} height={500} /> */}
+				{/* <Image src={'/stock1-nobg.png'} alt='stc' width={500} height={500} /> 
+				<Image src={'/wave.svg'} alt='stc' fill={true} /> */}
 			</section>{' '}
-			<Image
-				src={'/wave.svg'}
-				alt='stc'
-				fill={true}
-				objectFit='cover'
-				className='absolute mt-[40lvh]'
-			/>
-			<section className=' relative h-full mx-auto flex bg-background-secondary gap-20 py-10'></section>
+			<div className='bg-[url(/wave.svg)] w-full h-40 bg-no-repeat bg-cover' />
+			<section className=' relative h-fit mx-auto flex bg-background-secondary gap-20 py-10'>
+				{' '}
+			</section>
 			{/*<section className='rounded-3xl relative w-full flex flex-col bg-background-secondary gap-20 p-10'>
 				<Typography className={`${nunito.className} text-accent font-black text-center`}>
 					WHY MATCHOS?
@@ -93,7 +90,7 @@ export default function Home() {
 				</div>
 			</section>
 			 */}
-			<section className='mt-[40lvh] relative w-full h-fit px-30 flex bg-background gap-20 py-10'>
+			<section className=' relative w-full h-fit px-30 flex bg-background gap-20 py-10'>
 				{' '}
 				<div className='flex flex-col gap-13'>
 					<div className='flex flex-col gap-2 mt-10'>
