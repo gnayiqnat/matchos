@@ -7,13 +7,13 @@ import { Providers } from './providers';
 import { siteConfig } from '@/config/site';
 import { fontSans } from '@/config/fonts';
 import NavBar from './navbar.jsx';
-import GoogleMaps from '../components/googleMaps.jsx';
 import Image from 'next/image';
 import { Button, Typography } from '@heroui/react';
 import { Nunito } from 'next/font/google';
 import { FaInstagram, FaWaze } from 'react-icons/fa';
 import { MapPin } from 'lucide-react';
 import Link from 'next/link';
+import Script from 'next/script';
 export const metadata: Metadata = {
 	title: {
 		default: siteConfig.name,
@@ -40,7 +40,14 @@ export default function RootLayout({
 }) {
 	return (
 		<html suppressHydrationWarning lang='en'>
-			<head />
+			<head>
+				<link
+					rel='stylesheet'
+					href='https://unpkg.com/leaflet@1.9.4/dist/leaflet.css'
+					integrity='sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY='
+					crossOrigin=''	
+				/>
+			</head>
 			<body
 				className={clsx(
 					'min-h-screen w-full text-foreground bg-background font-sans antialiased',
@@ -50,7 +57,7 @@ export default function RootLayout({
 				<div className='relative flex flex-col h-screen'>
 					<NavBar />
 					<main className='flex-grow'>{children}</main>
-					<footer className='w-full rounded-t-[80px] flex items-center justify-between bg-foreground py-10 px-15'>
+					<footer className='w-full rounded-t-[80px] flex flex-col md:flex-row md:items-center justify-between bg-foreground py-10 px-15'>
 						<div>
 							<Image
 								src={'/monochrome-logo.png'}
@@ -62,7 +69,7 @@ export default function RootLayout({
 						<div className='flex flex-row gap-5'>
 							<div className='flex flex-col gap-2 mt-6'>
 								<Typography
-									className={`${nunito.className} text-accent font-bold text-2xl`}
+									className={`${nunito.className} text-accent font-bold text-2xl text-balance`}
 								>
 									Find Us at the Entreprenuership Fair!
 								</Typography>
@@ -85,12 +92,13 @@ export default function RootLayout({
 							</div>{' '}
 						</div>
 						<div
-							className={`${nunito.className} flex flex-row gap-7 items-center text-background-secondary`}
+							className={`${nunito.className} flex flex-row gap-7 items-center text-background-secondary mt-10 md:mt-0`}
 						>
 							<Link href='/privacy'>Privacy Notice</Link>{' '}
 							<Link href='/tos'>Terms of Use</Link>
 						</div>
-					</footer>
+					</footer>{' '}
+
 				</div>
 			</body>
 		</html>

@@ -1,3 +1,4 @@
+import MapBlock from '@/components/MapComponent';
 import { siteConfig } from '@/config/site';
 import {
 	Avatar,
@@ -34,9 +35,10 @@ export default function Home() {
 				src='/matchos-bg.png'
 				alt='bg'
 				fill={true}
-				className='object-cover opacity-60 select-none' draggable='false'
+				className='object-cover opacity-60 select-none'
+				draggable='false'
 			/>{' '}
-			<section className='flex items-center max-h-screen py-55 px-30'>
+			<section className='flex items-center max-h-screen py-55 px-8 md:px-30'>
 				<div className='fixed top-0 left-0 -z-1 '></div>
 				<div className='flex flex-col justify-center gap-10'>
 					<div className='flex flex-col gap-8'>
@@ -76,6 +78,83 @@ export default function Home() {
 				{/* <Image src={'/stock1-nobg.png'} alt='stc' width={500} height={500} /> 
 				<Image src={'/wave.svg'} alt='stc' fill={true} /> */}
 			</section>{' '}
+			<section className=' relative w-full h-fit px-8 md:px-30 flex flex-col-reverse items-center md:flex-row bg-background gap-20 py-15'>
+					<MapBlock />
+					<div className='flex flex-col gap-7 p-3'>
+						<div>
+							<Typography
+								className={`${nunito.className} text-accent text-lg font-black ml-2`}
+							>
+								LOCATION
+							</Typography>
+							<Typography
+								type='h3'
+								className={`${outfit.className} font-medium max-w-100 text-6xl text-foreground`}
+							>
+								Where we are
+							</Typography>
+						</div>
+						<div className='flex flex-row gap-3'>
+							<div className='px-5 py-4 bg-accent/5 rounded-xl'>
+								<Typography
+									className={`${nunito.className} text-accent text-lg font-black`}
+								>
+									Booth
+								</Typography>
+								<Typography
+									className={`${outfit.className} font-base max-w-100 text-xl text-foreground/90 text-balance ml-1`}
+								>
+									22
+								</Typography>
+							</div>
+							<div className='px-5 py-4 bg-accent/5 rounded-xl'>
+								<Typography
+									className={`${nunito.className} text-accent text-lg font-black`}
+								>
+									Date
+								</Typography>
+								<Typography
+									className={`${outfit.className} font-base max-w-100 text-xl text-foreground/80 text-balance`}
+								>
+									23 Sept 2026 (Entreprenuership Day)
+								</Typography>
+							</div>
+						</div>
+						<div className='flex flex-col px-7 py-5 bg-accent/5 rounded-xl gap-4'>
+							<Typography
+								className={`${nunito.className} text-accent text-lg font-black`}
+							>
+								Venue
+							</Typography>
+							<Typography
+								className={`${outfit.className} font-base max-w-100 text-xl text-foreground/80 text-balance`}
+							>
+								UTMSPACE Block T05, Skudai, 81310 Johor Bahru, Johor
+							</Typography>
+							<div className='flex flex-row gap-2'>
+								{' '}
+								<a
+									href='https://maps.app.goo.gl/VRuri975ueW8nGU36/'
+									target='_blank'
+									rel='noopener noreferrer'
+								>
+									<Button className='text-background bg-accent/90'>
+										Google Maps <MapPin />
+									</Button>
+								</a>
+								<a
+									href='https://ul.waze.com/ul?ll=1.56324245%2C103.65291072&navigate=yes&zoom=17'
+									target='_blank'
+									rel='noopener noreferrer'
+								>
+									<Button className='text-background bg-accent/90'>
+										Waze <FaWaze />
+									</Button>
+								</a>
+							</div>
+					</div>
+				</div>
+			</section>
 			<div className='bg-[url(/wave.svg)] w-full h-40 bg-no-repeat bg-cover' />
 			<section className=' relative h-fit w-full mx-auto flex flex-col justify-center items-center bg-background-secondary gap-15 pt-10 pb-20'>
 				{' '}
@@ -113,7 +192,7 @@ export default function Home() {
 				</div>
 			</section>
 			 */}
-			<section className=' relative w-full h-fit px-30 flex bg-background gap-20 py-15'>
+			<section className=' relative flex-col md:flex-row w-full h-fit px-8 md:px-30 flex bg-background gap-20 py-15'>
 				{' '}
 				<div className='flex flex-col gap-13'>
 					<div className='flex flex-col gap-2 mt-10'>
@@ -162,25 +241,6 @@ export default function Home() {
 					</Card>
 				</div>
 			</section>
-			{/*<section>
-				<div className='flex flex-row gap-4'>
-					<Typography
-						className={`${nunito.className} text-background-secondary text-lg font-thin`}
-					>
-						UTM SPACE, Block T05 (Booth 22)
-					</Typography>
-					<div className='flex flex-row gap-2'>
-						{' '}
-						<Button className='text-background bg-accent/20'>
-							Google Maps <MapPin />
-						</Button>
-						<Button className='text-background bg-accent/20'>
-							Waze <FaWaze />
-						</Button>
-					</div>
-				</div>
-			</section>
-			 */}
 		</>
 	);
 }
