@@ -215,21 +215,15 @@ export default function Home() {
 							Good things, made simple.
 						</Typography>
 					</div>{' '}
-					<Button
-						size='lg'
-						className='hidden lg:flex rounded-4xl p-7 bg-accent text-background font-normal gap-3'
-					>
-						Order Now <ArrowRight />
-					</Button>
-				</div>
-				<div className='h-fit flex flex-col lg:flex-row-reverse gap-2'>
-					<Image
-						src={'/food-both.png'}
-						alt='matcha-latte'
-						width={370}
-						height={370}
-					/>
 					<div className='flex flex-col gap-4 justify-center'>
+						{' '}
+						<Image
+							src={'/food-both.png'}
+							alt='matcha-latte'
+							width={370}
+							height={370}
+							className='lg:hidden'
+						/>
 						<div className='flex flex-col px-7 py-5 bg-accent/5 rounded-xl gap-2'>
 							<div>
 								<Typography
@@ -249,7 +243,6 @@ export default function Home() {
 								RM 1500
 							</Typography>
 						</div>
-
 						<div className='flex flex-col px-7 py-5 bg-accent/5 rounded-xl gap-2'>
 							<div>
 								<Typography
@@ -270,6 +263,22 @@ export default function Home() {
 							</Typography>
 						</div>
 					</div>
+					<Button
+						size='lg'
+						className='hidden lg:flex rounded-4xl p-7 bg-accent text-background font-normal gap-3'
+					>
+						Order Now <ArrowRight />
+					</Button>
+				</div>
+				<div className='flex flex-col xl:flex-row-reverse items-center justify-center gap-2'>
+					<Image
+						src={'/food-both.png'}
+						alt='matcha-latte'
+						width={600}
+						height={600}
+						className='hidden lg:block'
+					/>
+
 					{/*<Card
 						variant='transparent'
 						className='flex justify-center items-center h-fit w-fit p-4  border-none'
