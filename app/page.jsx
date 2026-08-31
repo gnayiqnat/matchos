@@ -198,7 +198,7 @@ export default function Home() {
 			 */}
 			<section
 				id='menu'
-				className=' relative flex-col md:flex-row w-full h-fit px-8 md:px-30 flex bg-background gap-20 py-15'
+				className=' relative flex-col md:flex-row w-full h-fit px-8 md:px-30 flex bg-background gap-5 md:gap-20 py-15'
 			>
 				{' '}
 				<div className='flex flex-col gap-8 md:gap-13'>
@@ -222,19 +222,14 @@ export default function Home() {
 						Order Now <ArrowRight />
 					</Button>
 				</div>
-				<div className='h-fit flex flex-col md:flex-row-reverse gap-5'>
+				<div className='h-fit flex flex-col md:flex-row-reverse gap-2'>
 					<Image
 						src={'/food-both.png'}
 						alt='matcha-latte'
 						width={370}
 						height={370}
 					/>
-					<div className='flex flex-col gap-4'>
-						<Typography
-							className={`${nunito.className} text-accent text-lg font-black`}
-						>
-							Snacks
-						</Typography>
+					<div className='flex flex-col gap-4 justify-center'>
 						<div className='flex flex-col px-7 py-5 bg-accent/5 rounded-xl gap-2'>
 							<div>
 								<Typography
@@ -254,11 +249,7 @@ export default function Home() {
 								RM 1500
 							</Typography>
 						</div>
-						<Typography
-							className={`${nunito.className} text-accent text-lg font-black`}
-						>
-							Beverages
-						</Typography>
+
 						<div className='flex flex-col px-7 py-5 bg-accent/5 rounded-xl gap-2'>
 							<div>
 								<Typography
@@ -329,7 +320,7 @@ export default function Home() {
 				</div>{' '}
 				<Button
 					size='lg'
-					className='flex md:hidden rounded-4xl p-7 bg-accent text-background font-normal gap-3'
+					className='flex md:hidden mt-5 rounded-4xl p-7 bg-accent text-background font-normal gap-3'
 				>
 					Order Now <ArrowRight />
 				</Button>
