@@ -78,7 +78,7 @@ export default function Home() {
 			</section>
 			<section
 				id='location'
-				className=' relative w-full h-fit px-8 md:px-30 flex flex-col-reverse items-center md:flex-row bg-background gap-20 py-15'
+				className=' relative w-full h-fit px-8 md:px-13 lg:px-30 flex flex-col-reverse items-center md:flex-row bg-background gap-5 lg:gap-20 py-15'
 			>
 				<MapBlock />
 				<div className='flex flex-col gap-7 p-3'>
@@ -90,12 +90,12 @@ export default function Home() {
 						</Typography>
 						<Typography
 							type='h3'
-							className={`${outfit.className} font-medium max-w-100 text-5xl md:text-6xl text-foreground`}
+							className={`${outfit.className} font-medium max-w-100 text-5xl lg:text-6xl text-foreground`}
 						>
 							Where we are
 						</Typography>
 					</div>
-					<div className='flex flex-row gap-3'>
+					<div className='flex flex-col lg:flex-row gap-3'>
 						<div className='px-5 py-4 bg-accent/5 rounded-xl'>
 							<Typography
 								className={`${nunito.className} text-accent text-lg font-black`}
@@ -160,7 +160,7 @@ export default function Home() {
 				className='w-full h-40 bg-no-repeat bg-cover'
 				style={{ backgroundImage: 'url(/wave.svg)' }}
 			/>
-			<section className=' relative h-fit w-full mx-auto flex flex-col justify-center items-center bg-background-secondary gap-15 pt-10 pb-20'>
+			<section className=' relative h-fit w-full mx-auto flex flex-col justify-center items-center bg-background-secondary gap-15 pt-10 pb-20 px-3'>
 				{' '}
 				<div>
 					<Typography
@@ -170,7 +170,7 @@ export default function Home() {
 					</Typography>
 					<Typography
 						type='h3'
-						className={`${outfit.className} font-medium max-w-200 text-5xl md:text-6xl text-foreground text-balance text-center`}
+						className={`${outfit.className} font-medium lg:max-w-200 text-5xl lg:text-6xl text-foreground text-balance text-center`}
 					>
 						Limited deals, and updates.
 					</Typography>
@@ -198,10 +198,10 @@ export default function Home() {
 			 */}
 			<section
 				id='menu'
-				className=' relative flex-col md:flex-row w-full h-fit px-8 md:px-30 flex bg-background gap-5 md:gap-20 py-15'
+				className=' relative flex-col lg:flex-row w-full h-fit px-8 md:px-30 flex bg-background gap-5 lg:gap-20 py-15'
 			>
 				{' '}
-				<div className='flex flex-col gap-8 md:gap-13'>
+				<div className='flex flex-col gap-8 lg:gap-13'>
 					<div className='flex flex-col gap-2 mt-10'>
 						<Typography
 							className={`${nunito.className} text-accent text-lg font-black ml-2`}
@@ -210,19 +210,19 @@ export default function Home() {
 						</Typography>
 						<Typography
 							type='h3'
-							className={`${outfit.className} font-medium max-w-100 text-5xl md:text-6xl text-foreground`}
+							className={`${outfit.className} font-medium max-w-100 text-5xl lg:text-6xl text-foreground`}
 						>
 							Good things, made simple.
 						</Typography>
 					</div>{' '}
 					<Button
 						size='lg'
-						className='hidden md:flex rounded-4xl p-7 bg-accent text-background font-normal gap-3'
+						className='hidden lg:flex rounded-4xl p-7 bg-accent text-background font-normal gap-3'
 					>
 						Order Now <ArrowRight />
 					</Button>
 				</div>
-				<div className='h-fit flex flex-col md:flex-row-reverse gap-2'>
+				<div className='h-fit flex flex-col lg:flex-row-reverse gap-2'>
 					<Image
 						src={'/food-both.png'}
 						alt='matcha-latte'
@@ -320,7 +320,7 @@ export default function Home() {
 				</div>{' '}
 				<Button
 					size='lg'
-					className='flex md:hidden mt-5 rounded-4xl p-7 bg-accent text-background font-normal gap-3'
+					className='flex lg:hidden mt-5 rounded-4xl p-7 bg-accent text-background font-normal gap-3'
 				>
 					Order Now <ArrowRight />
 				</Button>
