@@ -32,14 +32,10 @@ const nunito = Nunito({ weight: ['700', '800'] });
 export default function Home() {
 	return (
 		<>
-			<Image
-				src='/matchos-bg.png'
-				alt='bg'
-				fill={true}
-				className='object-cover opacity-60 select-none'
-				draggable='false'
-			/>{' '}
-			<section className='flex items-center max-h-screen py-23 md:py-55 px-8 md:px-30'>
+			<section
+				className='flex items-center max-h-screen py-23 md:py-55 px-8 md:px-30 bg-no-repeat bg-cover bg-right'
+				style={{ backgroundImage: "url('/matchos-bg.png')" }}
+			>
 				<div className='fixed top-0 left-0 -z-1 '></div>
 				<div className='flex flex-col justify-center gap-10'>
 					<div className='flex flex-col gap-8'>
@@ -69,13 +65,21 @@ export default function Home() {
 					</div>
 					<div className={`${inter.className} flex flex-row gap-3 `}>
 						<CustomButton text='View Menu' icon={<ArrowRight />} scrollTo='menu' />
-						<CustomButton variant='ghost' text='Find Us' icon={<MapPin size={30} />} scrollTo='location' />
+						<CustomButton
+							variant='ghost'
+							text='Find Us'
+							icon={<MapPin size={30} />}
+							scrollTo='location'
+						/>
 					</div>
 				</div>
 				{/* <Image src={'/stock1-nobg.png'} alt='stc' width={500} height={500} /> 
 				<Image src={'/wave.svg'} alt='stc' fill={true} /> */}
 			</section>
-			<section id='location' className=' relative w-full h-fit px-8 md:px-30 flex flex-col-reverse items-center md:flex-row bg-background gap-20 py-15'>
+			<section
+				id='location'
+				className=' relative w-full h-fit px-8 md:px-30 flex flex-col-reverse items-center md:flex-row bg-background gap-20 py-15'
+			>
 				<MapBlock />
 				<div className='flex flex-col gap-7 p-3'>
 					<div>
@@ -152,7 +156,10 @@ export default function Home() {
 					</div>
 				</div>
 			</section>
-			<div className='bg-[url(/wave.svg)] w-full h-40 bg-no-repeat bg-cover' />
+			<div
+				className='w-full h-40 bg-no-repeat bg-cover'
+				style={{ backgroundImage: 'url(/wave.svg)' }}
+			/>
 			<section className=' relative h-fit w-full mx-auto flex flex-col justify-center items-center bg-background-secondary gap-15 pt-10 pb-20'>
 				{' '}
 				<div>
