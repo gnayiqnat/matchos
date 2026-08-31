@@ -214,22 +214,78 @@ export default function Home() {
 						>
 							Good things, made simple.
 						</Typography>
-					</div>
+					</div>{' '}
 					<Button
 						size='lg'
-						className='rounded-4xl p-7 bg-accent text-background font-normal gap-3'
+						className='hidden md:flex rounded-4xl p-7 bg-accent text-background font-normal gap-3'
 					>
 						Order Now <ArrowRight />
 					</Button>
 				</div>
-				<div className='h-fit flex flex-row'>
-					<Card
+				<div className='h-fit flex flex-col md:flex-row-reverse gap-5'>
+					<Image
+						src={'/food-both.png'}
+						alt='matcha-latte'
+						width={370}
+						height={370}
+					/>
+					<div className='flex flex-col gap-4'>
+						<Typography
+							className={`${nunito.className} text-accent text-lg font-black`}
+						>
+							Snacks
+						</Typography>
+						<div className='flex flex-col px-7 py-5 bg-accent/5 rounded-xl gap-2'>
+							<div>
+								<Typography
+									className={`${outfit.className} font-black max-w-100 text-xl text-foreground/80 text-balance`}
+								>
+									Crispy Nachos
+								</Typography>
+								<Typography
+									className={`${outfit.className} font-base max-w-100 text-lg/5 text-foreground/80 text-balance`}
+								>
+									Lorem ipsum dolor sit amet consectetur adipisicing elit.
+								</Typography>
+							</div>
+							<Typography
+								className={`${outfit.className} text-lg font-bold text-accent `}
+							>
+								RM 1500
+							</Typography>
+						</div>
+						<Typography
+							className={`${nunito.className} text-accent text-lg font-black`}
+						>
+							Beverages
+						</Typography>
+						<div className='flex flex-col px-7 py-5 bg-accent/5 rounded-xl gap-2'>
+							<div>
+								<Typography
+									className={`${outfit.className} font-black max-w-100 text-xl text-foreground/80 text-balance`}
+								>
+									Iced Matcha Latte
+								</Typography>
+								<Typography
+									className={`${outfit.className} font-base max-w-100 text-lg/5 text-foreground/80 text-balance`}
+								>
+									Lorem ipsum dolor sit amet consectetur adipisicing elit.
+								</Typography>
+							</div>
+							<Typography
+								className={`${outfit.className} text-lg font-bold text-accent`}
+							>
+								RM 1000
+							</Typography>
+						</div>
+					</div>
+					{/*<Card
 						variant='transparent'
 						className='flex justify-center items-center h-fit w-fit p-4  border-none'
 					>
-						<Card.Header className='flex flex-col gap-3 bg-background-secondary/85 rounded-xl p-4'>
+						<Card.Header className='flex flex-col gap-3 bg-background-secondary/30 rounded-xl p-4'>
 							<Image
-								src={'/stock1-nobg1.png'}
+								src={'/matcha-cup.png'}
 								alt='matcha-latte'
 								width={320}
 								height={320}
@@ -242,11 +298,41 @@ export default function Home() {
 							<Card.Description
 								className={`${outfit.className} text-lg font-bold text-accent`}
 							>
-								RM 10.99
+								x
 							</Card.Description>
 						</Card.Footer>
 					</Card>
-				</div>
+					<Card
+						variant='transparent'
+						className='flex justify-center items-center h-fit w-fit p-4  border-none'
+					>
+						<Card.Header className='flex flex-col gap-3 bg-background-secondary/30 rounded-xl p-4'>
+							<Image
+								src={'/nachos.png'}
+								alt='matcha-latte'
+								width={320}
+								height={320}
+							/>
+						</Card.Header>
+						<Card.Footer className='flex flex-row w-full justify-between py-3 px-2'>
+							<Card.Title className={`${nunito.className} text-xl`}>
+								Nachos
+							</Card.Title>
+							<Card.Description
+								className={`${outfit.className} text-lg font-bold text-accent`}
+							>
+								x
+							</Card.Description>
+						</Card.Footer>
+					</Card>
+					 */}
+				</div>{' '}
+				<Button
+					size='lg'
+					className='flex md:hidden rounded-4xl p-7 bg-accent text-background font-normal gap-3'
+				>
+					Order Now <ArrowRight />
+				</Button>
 			</section>
 		</>
 	);
