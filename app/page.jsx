@@ -33,7 +33,7 @@ export default function Home() {
 	return (
 		<>
 			<section
-				className='flex h-screen pt-21  px-8 md:px-30 bg-no-repeat bg-cover bg-right'
+				className='flex h-screen pt-21 lg:flex-row px-8 md:px-30 bg-no-repeat bg-cover bg-right'
 				style={{ backgroundImage: "url('/matchos-bg.png')" }}
 			>
 				<div className='flex  flex-col justify-start gap-10'>
@@ -71,6 +71,15 @@ export default function Home() {
 							scrollTo='location'
 						/>
 					</div>
+				</div>
+				<div className='flex items-start justify-start -mt-20'>
+					<Image
+						src={'/food-both.png'}
+						alt='matcha-latte'
+						width={700}
+						height={700}
+						className='hidden xl:block'
+					/>
 				</div>
 				{/* <Image src={'/stock1-nobg.png'} alt='stc' width={500} height={500} /> 
 				<Image src={'/wave.svg'} alt='stc' fill={true} /> */}
