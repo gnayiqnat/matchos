@@ -33,11 +33,10 @@ export default function Home() {
 	return (
 		<>
 			<section
-				className='flex items-center max-h-screen py-23 md:py-55 px-8 md:px-30 bg-no-repeat bg-cover bg-right'
+				className='flex h-screen pt-21  px-8 md:px-30 bg-no-repeat bg-cover bg-right'
 				style={{ backgroundImage: "url('/matchos-bg.png')" }}
 			>
-				<div className='fixed top-0 left-0 -z-1 '></div>
-				<div className='flex flex-col justify-center gap-10'>
+				<div className='flex  flex-col justify-start gap-10'>
 					<div className='flex flex-col gap-8'>
 						{/* <Chip
 							size='lg'

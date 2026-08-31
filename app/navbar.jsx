@@ -8,10 +8,10 @@ const inter = Inter({ weight: ['300', '400', '600'] });
 export default function NavBar() {
 	return (
 		<>
-			<nav className='w-full h-20 pt-20 flex flex-row justify-center items-center'>
+			<nav className='w-full pt-5 pl-10 lg:pl-20 flex flex-row justify-left items-center'>
 				<Link
 					href='/'
-					className='w-[90%] flex flex-row items-center rounded-[100px] gap-15'
+					className=' flex flex-row items-center rounded-[100px] gap-15'
 				>
 						<Image
 							src={'/matchos logo.png'}
