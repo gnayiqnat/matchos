@@ -78,7 +78,7 @@ export default function Home() {
 			</section>
 			<section
 				id='location'
-				className=' relative w-full h-fit px-8 md:px-13 lg:px-30 flex flex-col-reverse items-center md:flex-row bg-background gap-5 lg:gap-20 py-15'
+				className=' relative w-full h-fit px-3 md:px-13 lg:px-30 flex flex-col-reverse items-center md:flex-row bg-background gap-5 lg:gap-20 py-15'
 			>
 				<MapBlock />
 				<div className='flex flex-col gap-7 p-3'>
