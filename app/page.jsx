@@ -1,3 +1,4 @@
+import CustomButton from '@/components/button';
 import MapBlock from '@/components/MapComponent';
 import { siteConfig } from '@/config/site';
 import {
@@ -67,18 +68,14 @@ export default function Home() {
 						</Typography>
 					</div>
 					<div className={`${inter.className} flex flex-row gap-3 `}>
-						<Button size='lg' className=' p-6 bg-accent text-background font-normal'>
-							View Menu <ArrowRight />
-						</Button>
-						<Button size='lg' variant='ghost' className={'text-foreground p-6'}>
-							Find Us <MapPin size={30} />
-						</Button>
+						<CustomButton text='View Menu' icon={<ArrowRight />} scrollTo='menu' />
+						<CustomButton variant='ghost' text='Find Us' icon={<MapPin size={30} />} scrollTo='location' />
 					</div>
 				</div>
 				{/* <Image src={'/stock1-nobg.png'} alt='stc' width={500} height={500} /> 
 				<Image src={'/wave.svg'} alt='stc' fill={true} /> */}
-			</section>{' '}
-			<section className=' relative w-full h-fit px-8 md:px-30 flex flex-col-reverse items-center md:flex-row bg-background gap-20 py-15'>
+			</section>
+			<section id='location' className=' relative w-full h-fit px-8 md:px-30 flex flex-col-reverse items-center md:flex-row bg-background gap-20 py-15'>
 				<MapBlock />
 				<div className='flex flex-col gap-7 p-3'>
 					<div>
@@ -192,7 +189,10 @@ export default function Home() {
 				</div>
 			</section>
 			 */}
-			<section className=' relative flex-col md:flex-row w-full h-fit px-8 md:px-30 flex bg-background gap-20 py-15'>
+			<section
+				id='menu'
+				className=' relative flex-col md:flex-row w-full h-fit px-8 md:px-30 flex bg-background gap-20 py-15'
+			>
 				{' '}
 				<div className='flex flex-col gap-8 md:gap-13'>
 					<div className='flex flex-col gap-2 mt-10'>
