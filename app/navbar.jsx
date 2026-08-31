@@ -15,14 +15,14 @@ export default function NavBar() {
 						width={100}
 						height={100}
 					/>
-					<ul
+					{/*<ul
 						className={`${inter.className} text-lg font-semibold flex flex-row gap-10 text-foreground/80`}
 					>
 						<li>Home</li>
 						<li>Menu</li>
 						<li>Find Us</li>
 						<li>About</li>
-					</ul>
+					</ul> */}
 				</div>
 			</nav>
 		</>

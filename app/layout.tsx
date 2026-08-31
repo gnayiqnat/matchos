@@ -41,11 +41,18 @@ export default function RootLayout({
 	return (
 		<html suppressHydrationWarning lang='en'>
 			<head>
+				<link rel='icon' href='/favicon.ico' sizes='any' />
+				<link
+					rel='icon'
+					href='/icon.jpeg'
+					type='image/jpeg'
+					sizes='any'
+				/>
 				<link
 					rel='stylesheet'
 					href='https://unpkg.com/leaflet@1.9.4/dist/leaflet.css'
 					integrity='sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY='
-					crossOrigin=''	
+					crossOrigin=''
 				/>
 			</head>
 			<body
@@ -67,13 +74,13 @@ export default function RootLayout({
 							/>
 						</div>
 						<div className='flex flex-row gap-5'>
-							<div className='flex flex-col gap-2 mt-6'>
+							<div className='flex flex-col  gap-4 mt-6'>
 								<Typography
 									className={`${nunito.className} text-accent font-bold text-2xl text-balance`}
 								>
 									Find Us at the Entreprenuership Fair!
 								</Typography>
-								<div className='flex flex-row gap-7 items-center'>
+								<div className='flex flex-col md:flex-row gap-2 md:gap-7 md:items-center'>
 									<Typography
 										className={`${nunito.className} text-background-secondary text-lg font-normal`}
 									>
@@ -92,13 +99,11 @@ export default function RootLayout({
 							</div>{' '}
 						</div>
 						<div
-							className={`${nunito.className} flex flex-row gap-7 items-center text-background-secondary mt-10 md:mt-0`}
+							className={`${nunito.className} flex flex-row gap-7 items-center text-background-secondary/70 mt-10 md:mt-0`}
 						>
 							<Link href='/privacy'>Privacy Notice</Link>{' '}
-							<Link href='/tos'>Terms of Use</Link>
 						</div>
 					</footer>{' '}
-
 				</div>
 			</body>
 		</html>
