@@ -34,7 +34,7 @@ export default function Home() {
 	return (
 		<>
 			<section
-				className='flex h-screen pt-21 lg:flex-row px-8 md:px-30 bg-no-repeat bg-cover bg-right'
+				className='flex h-lvh pt-21 lg:flex-row px-8 md:px-30 bg-no-repeat bg-cover bg-right'
 				style={{ backgroundImage: "url('/matchos-bg.png')" }}
 			>
 				<div className='flex  flex-col justify-start gap-10'>
