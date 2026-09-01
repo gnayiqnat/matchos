@@ -271,13 +271,15 @@ export default function Home() {
 								RM 13.90
 							</Typography>
 						</div>
-					</div>
-					<Button
-						size='lg'
-						className='hidden lg:flex rounded-4xl p-7 bg-accent text-background font-normal gap-3'
-					>
-						Order Now <ArrowRight />
-					</Button>
+					</div>{' '}
+					<a href='https://bit.ly/3SLpBRA' target='_blank' rel='noopener noreferrer'>
+						<Button
+							size='lg'
+							className='hidden lg:flex rounded-4xl p-7 bg-accent text-background font-normal gap-3'
+						>
+							Order Now <ArrowRight />
+						</Button>
+					</a>
 				</div>
 				<div className='flex flex-col xl:flex-row-reverse items-center justify-center gap-2'>
 					<Image
@@ -336,12 +338,14 @@ export default function Home() {
 					</Card>
 					 */}
 				</div>{' '}
-				<Button
-					size='lg'
-					className='flex lg:hidden mt-5 rounded-4xl p-7 bg-accent text-background font-normal gap-3'
-				>
-					Order Now <ArrowRight />
-				</Button>
+				<a href='https://bit.ly/3SLpBRA' target='_blank' rel='noopener noreferrer'>
+					<Button
+						size='lg'
+						className='flex lg:hidden mt-5 rounded-4xl p-7 bg-accent text-background font-normal gap-3'
+					>
+						Order Now <ArrowRight />
+					</Button>
+				</a>
 			</section>
 		</>
 	);
