@@ -359,16 +359,18 @@ export default function Home() {
 					</Card>
 					 */}
 				</div>{' '}
-				<a href='https://bit.ly/3SLpBRA' target='_blank' rel='noopener noreferrer'>
-					<ScaleProvider>
-						<Button
-							size='lg'
-							className='flex lg:hidden mt-5 rounded-4xl p-7 bg-accent text-background font-normal gap-3'
-						>
-							Order Now <ArrowRight />
-						</Button>
-					</ScaleProvider>
-				</a>
+				<div className='w-fit'>
+					<a href='https://bit.ly/3SLpBRA' target='_blank' rel='noopener noreferrer'>
+						<ScaleProvider>
+							<Button
+								size='lg'
+								className='flex lg:hidden mt-5 rounded-4xl p-7 bg-accent text-background font-normal gap-3'
+							>
+								Order Now <ArrowRight />
+							</Button>
+						</ScaleProvider>
+					</a>
+				</div>
 			</section>
 		</>
 	);
