@@ -17,9 +17,8 @@ export default function Privacy() {
 					</p>
 				</div>
 
-				{/* 1. Information We Collect */}
 				<div className='flex flex-col gap-6'>
-					<h2 className='text-3xl'>1. Information We Collect</h2>
+					<h2 className='text-2xl md:text-3xl'>1. Information We Collect</h2>
 
 					<p>
 						Our website primarily functions as an online menu and provides information
@@ -91,9 +90,10 @@ export default function Privacy() {
 					</div>
 				</div>
 
-				{/* 2. How We Use Your Personal Data */}
 				<div className='flex flex-col gap-6'>
-					<h2 className='text-3xl'>2. How We Use Your Personal Data</h2>
+					<h2 className='text-2xl md:text-3xl text-start'>
+						2. How We Use Your Personal Data
+					</h2>
 
 					<p>We may use personal data for the following purposes:</p>
 
@@ -138,7 +138,9 @@ export default function Privacy() {
 
 				{/* 3. Third-Party Service Providers */}
 				<div className='flex flex-col gap-6'>
-					<h2 className='text-3xl'>3. Third-Party Service Providers</h2>
+					<h2 className='text-2xl md:text-3xl text-start'>
+						3. Third-Party Service Providers
+					</h2>
 
 					<p>
 						We use third-party service providers to operate our website and ordering
@@ -179,7 +181,9 @@ export default function Privacy() {
 				</div>
 
 				<div className='flex flex-col gap-6'>
-					<h2 className='text-3xl'>4. Retention of Personal Data</h2>
+					<h2 className='text-2xl md:text-3xl text-start'>
+						4. Retention of Personal Data
+					</h2>
 
 					<p>
 						We retain personal data only for as long as it is reasonably necessary for
@@ -211,7 +215,7 @@ export default function Privacy() {
 				</div>
 
 				<div className='flex flex-col gap-6'>
-					<h2 className='text-3xl'>5. Security</h2>
+					<h2 className='text-2xl md:text-3xl'>5. Security</h2>
 
 					<p>
 						We take reasonable steps to protect personal data in our possession or
@@ -226,7 +230,7 @@ export default function Privacy() {
 				</div>
 
 				<div className='flex flex-col gap-6'>
-					<h2 className='text-3xl'>6. Your Rights</h2>
+					<h2 className='text-2xl md:text-3xl'>6. Your Rights</h2>
 
 					<p>
 						Subject to applicable laws and certain exceptions under the PDPA, you may
@@ -269,9 +273,10 @@ export default function Privacy() {
 					</p>
 				</div>
 
-				{/* 7. Changes */}
 				<div className='flex flex-col gap-6'>
-					<h2 className='text-3xl'>7. Changes to This Privacy Notice</h2>
+					<h2 className='text-2xl md:text-3xl text-start'>
+						7. Changes to This Privacy Notice
+					</h2>
 
 					<p>
 						We may update this Privacy Notice from time to time to reflect changes to
@@ -284,9 +289,8 @@ export default function Privacy() {
 					</p>
 				</div>
 
-				{/* 8. Contact */}
 				<div className='flex flex-col gap-6'>
-					<h2 className='text-3xl'>8. Contact Us</h2>
+					<h2 className='text-2xl md:text-3xl text-start'>8. Contact Us</h2>
 
 					<p>
 						If you have any questions, concerns, or requests regarding this Privacy
