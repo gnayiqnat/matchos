@@ -14,6 +14,8 @@ import { FaInstagram, FaWaze } from 'react-icons/fa';
 import { MapPin } from 'lucide-react';
 import Link from 'next/link';
 import Script from 'next/script';
+import { Analytics } from "@vercel/analytics/next"
+
 export const metadata: Metadata = {
 	title: {
 		default: siteConfig.name,
@@ -64,6 +66,7 @@ export default function RootLayout({
 				<div className='relative flex flex-col h-screen'>
 					<NavBar />
 					<main className='flex-grow'>{children}</main>
+					<Analytics />
 					<footer className='w-full rounded-t-[80px] flex flex-col md:flex-row md:items-center justify-between bg-foreground py-10 px-15'>
 						<div>
 							<Image
