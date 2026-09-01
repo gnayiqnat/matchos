@@ -1,7 +1,13 @@
 'use client';
+
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
 import L from 'leaflet';
+import { GestureHandling } from 'leaflet-gesture-handling';
+import 'leaflet-gesture-handling/dist/leaflet-gesture-handling.css';
+
+// Leaflet gesture handling (Two finger to zoom/ Ctrl + Click to zoom)
+L.Map.addInitHook('addHandler', 'gestureHandling', GestureHandling);
 
 // Fix for broken default markers in Next.js
 delete L.Icon.Default.prototype._getIconUrl;
@@ -18,6 +24,7 @@ export default function Map() {
 			center={[1.5628, 103.652624]}
 			zoom={18}
 			style={{ height: '360px', width: '360px', borderRadius: '20px' }}
+			gestureHandling={true}
 		>
 			<TileLayer
 				attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
