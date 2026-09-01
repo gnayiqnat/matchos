@@ -1,3 +1,4 @@
+import ScaleProvider from '@/components/animation/scale';
 import CustomButton from '@/components/button';
 import MapBlock from '@/components/MapComponent';
 import { siteConfig } from '@/config/site';
@@ -63,13 +64,17 @@ export default function Home() {
 						</Typography>
 					</div>
 					<div className={`${inter.className} flex flex-row gap-3 `}>
-						<CustomButton text='View Menu' icon={<ArrowRight />} scrollTo='menu' />
-						<CustomButton
-							variant='ghost'
-							text='Find Us'
-							icon={<MapPin size={30} />}
-							scrollTo='location'
-						/>
+						<ScaleProvider>
+							<CustomButton text='View Menu' icon={<ArrowRight />} scrollTo='menu' />
+						</ScaleProvider>
+						<ScaleProvider>
+							<CustomButton
+								variant='ghost'
+								text='Find Us'
+								icon={<MapPin size={30} />}
+								scrollTo='location'
+							/>
+						</ScaleProvider>
 					</div>
 				</div>
 				<div className='flex items-start justify-start -mt-20'>
@@ -140,25 +145,29 @@ export default function Home() {
 						>
 							UTMSPACE Block T05, Skudai, 81310 Johor Bahru, Johor
 						</Typography>
-						<div className='flex flex-row gap-2'>
+						<div className='flex flex-row gap-3'>
 							{' '}
 							<a
 								href='https://maps.app.goo.gl/VRuri975ueW8nGU36/'
 								target='_blank'
 								rel='noopener noreferrer'
 							>
-								<Button className='text-background bg-accent/90'>
-									Google Maps <MapPin />
-								</Button>
+								<ScaleProvider>
+									<Button className='text-background bg-accent/90'>
+										Google Maps <MapPin />
+									</Button>
+								</ScaleProvider>
 							</a>
 							<a
 								href='https://ul.waze.com/ul?ll=1.56324245%2C103.65291072&navigate=yes&zoom=17'
 								target='_blank'
 								rel='noopener noreferrer'
 							>
-								<Button className='text-background bg-accent/90'>
-									Waze <FaWaze />
-								</Button>
+								<ScaleProvider>
+									<Button className='text-background bg-accent/90'>
+										Waze <FaWaze />
+									</Button>
+								</ScaleProvider>
 							</a>
 						</div>
 					</div>
@@ -271,15 +280,23 @@ export default function Home() {
 								RM 13.90
 							</Typography>
 						</div>
-					</div>{' '}
-					<a href='https://bit.ly/3SLpBRA' target='_blank' rel='noopener noreferrer'>
-						<Button
-							size='lg'
-							className='hidden lg:flex rounded-4xl p-7 bg-accent text-background font-normal gap-3'
+					</div>
+					<div className='flex flex-row'>
+						<a
+							href='https://bit.ly/3SLpBRA'
+							target='_blank'
+							rel='noopener noreferrer'
 						>
-							Order Now <ArrowRight />
-						</Button>
-					</a>
+							<ScaleProvider>
+								<Button
+									size='lg'
+									className='hidden lg:flex rounded-4xl p-7 bg-accent text-background font-normal gap-3'
+								>
+									Order Now <ArrowRight />
+								</Button>
+							</ScaleProvider>
+						</a>
+					</div>
 				</div>
 				<div className='flex flex-col xl:flex-row-reverse items-center justify-center gap-2'>
 					<Image
@@ -339,12 +356,14 @@ export default function Home() {
 					 */}
 				</div>{' '}
 				<a href='https://bit.ly/3SLpBRA' target='_blank' rel='noopener noreferrer'>
-					<Button
-						size='lg'
-						className='flex lg:hidden mt-5 rounded-4xl p-7 bg-accent text-background font-normal gap-3'
-					>
-						Order Now <ArrowRight />
-					</Button>
+					<ScaleProvider>
+						<Button
+							size='lg'
+							className='flex lg:hidden mt-5 rounded-4xl p-7 bg-accent text-background font-normal gap-3'
+						>
+							Order Now <ArrowRight />
+						</Button>
+					</ScaleProvider>
 				</a>
 			</section>
 		</>
