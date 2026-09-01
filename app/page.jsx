@@ -78,13 +78,15 @@ export default function Home() {
 					</div>
 				</div>
 				<div className='flex items-start justify-start -mt-20'>
-					<Image
-						src={'/food-both.png'}
-						alt='matcha-latte'
-						width={700}
-						height={700}
-						className='hidden xl:block'
-					/>
+					<ScaleProvider>
+						<Image
+							src={'/food-both.png'}
+							alt='matcha-latte'
+							width={700}
+							height={700}
+							className='hidden xl:block'
+						/>
+					</ScaleProvider>
 				</div>
 				{/* <Image src={'/stock1-nobg.png'} alt='stc' width={500} height={500} /> 
 				<Image src={'/wave.svg'} alt='stc' fill={true} /> */}
@@ -233,7 +235,6 @@ export default function Home() {
 						</Typography>
 					</div>{' '}
 					<div className='flex flex-col gap-4 justify-center'>
-						{' '}
 						<Image
 							src={'/food-both.png'}
 							alt='matcha-latte'
@@ -299,13 +300,16 @@ export default function Home() {
 					</div>
 				</div>
 				<div className='flex flex-col xl:flex-row-reverse items-center justify-center gap-2'>
-					<Image
-						src={'/food-both.png'}
-						alt='matcha-latte'
-						width={600}
-						height={600}
-						className='hidden lg:block'
-					/>
+					<ScaleProvider>
+						<Image
+							src={'/food-both.png'}
+							alt='matcha-latte'
+							width={600}
+							height={600}
+							className='hidden lg:block'
+							draggable='false'
+						/>
+					</ScaleProvider>
 
 					{/*<Card
 						variant='transparent'
