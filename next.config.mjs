@@ -3,13 +3,14 @@
 const isDev = process.env.NODE_ENV === 'development';
 
 const ContentSecurityPolicy = `
-    default-src 'self';
+    default-src 'none';
     script-src 'self' 'unsafe-inline' ${isDev ? "'unsafe-eval'" : ''} https://*.vercel-scripts.com;
     style-src 'self' 'unsafe-inline' https://unpkg.com;
     img-src 'self' blob: data:  https://*.openstreetmap.org https://unpkg.com;
     font-src 'self';
     object-src 'none';
     base-uri 'self';
+    connect-src 'self';
     form-action 'self';
     frame-ancestors 'none';
     upgrade-insecure-requests;
