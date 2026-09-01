@@ -100,7 +100,7 @@ export default function Home() {
 							type='h3'
 							className={`${outfit.className} font-medium max-w-100 text-5xl lg:text-6xl text-foreground`}
 						>
-							Where we are
+							Booth Details
 						</Typography>
 					</div>
 					<div className='flex flex-col lg:flex-row gap-3'>
@@ -237,18 +237,18 @@ export default function Home() {
 								<Typography
 									className={`${outfit.className} font-black max-w-100 text-xl text-foreground/80 text-balance`}
 								>
-									Crispy Nachos
+									Crispy Loaded Doritos Nachos
 								</Typography>
 								<Typography
 									className={`${outfit.className} font-base max-w-100 text-lg/5 text-foreground/80 text-balance`}
 								>
-									Lorem ipsum dolor sit amet consectetur adipisicing elit.
+									25g Doritos loaded with your choice of toppings and sauces.{' '}
 								</Typography>
 							</div>
 							<Typography
 								className={`${outfit.className} text-lg font-bold text-accent `}
 							>
-								RM 1500
+								RM 11.70
 							</Typography>
 						</div>
 						<div className='flex flex-col px-7 py-5 bg-accent/5 rounded-xl gap-2'>
@@ -256,18 +256,19 @@ export default function Home() {
 								<Typography
 									className={`${outfit.className} font-black max-w-100 text-xl text-foreground/80 text-balance`}
 								>
-									Iced Matcha Latte
+									Niko Neko Matcha Latte
 								</Typography>
 								<Typography
 									className={`${outfit.className} font-base max-w-100 text-lg/5 text-foreground/80 text-balance`}
 								>
-									Lorem ipsum dolor sit amet consectetur adipisicing elit.
+									16Oz Premium Niko Neko Yuri matcha powder with fresh barista milk over
+									ice.
 								</Typography>
 							</div>
 							<Typography
 								className={`${outfit.className} text-lg font-bold text-accent`}
 							>
-								RM 1000
+								RM 13.90
 							</Typography>
 						</div>
 					</div>
