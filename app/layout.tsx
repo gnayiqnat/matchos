@@ -14,7 +14,8 @@ import { FaInstagram, FaWaze } from 'react-icons/fa';
 import { MapPin } from 'lucide-react';
 import Link from 'next/link';
 import Script from 'next/script';
-import { Analytics } from "@vercel/analytics/next"
+import { Analytics } from '@vercel/analytics/next';
+import FadeInProvider from '@/components/animation/opacity';
 
 export const metadata: Metadata = {
 	title: {
@@ -44,12 +45,7 @@ export default function RootLayout({
 		<html suppressHydrationWarning lang='en'>
 			<head>
 				<link rel='icon' href='/favicon.ico' sizes='any' />
-				<link
-					rel='icon'
-					href='/icon.jpeg'
-					type='image/jpeg'
-					sizes='any'
-				/>
+				<link rel='icon' href='/icon.jpeg' type='image/jpeg' sizes='any' />
 				<link
 					rel='stylesheet'
 					href='https://unpkg.com/leaflet@1.9.4/dist/leaflet.css'
@@ -65,7 +61,9 @@ export default function RootLayout({
 			>
 				<div className='relative flex flex-col h-screen'>
 					<NavBar />
-					<main className='flex-grow'>{children}</main>
+					<main className='grow'>
+						<FadeInProvider>{children}</FadeInProvider>
+					</main>
 					<Analytics />
 					<footer className='w-full rounded-t-[80px] flex flex-col md:flex-row md:items-center justify-between bg-foreground py-10 px-15'>
 						<div>
