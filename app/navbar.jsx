@@ -1,9 +1,5 @@
 import Image from 'next/image';
-
-import { Inter } from 'next/font/google';
 import Link from 'next/link';
-
-const inter = Inter({ weight: ['300', '400', '600'] });
 
 export default function NavBar() {
 	return (

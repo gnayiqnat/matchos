@@ -1,21 +1,13 @@
 import ScaleProvider from '@/components/animation/scale';
 import CustomButton from '@/components/button';
 import MapBlock from '@/components/MapComponent';
-import { siteConfig } from '@/config/site';
 import {
-	Avatar,
 	Button,
-	Card,
-	CardDescription,
-	Chip,
 	Typography,
 } from '@heroui/react';
-import { ArrowRight, ChefHat, Leaf, MapPin } from 'lucide-react';
+import { ArrowRight, MapPin } from 'lucide-react';
 import {
-	Playfair_Display,
-	Oswald,
 	Outfit,
-	Playfair,
 	Inter,
 	Nunito,
 } from 'next/font/google';
@@ -24,10 +16,6 @@ import { FaWaze } from 'react-icons/fa';
 
 const outfit = Outfit({ weight: ['300', '400', '500', '600'] });
 const inter = Inter({ weight: ['300', '400', '500', '600'] });
-const playfairDisplay = Playfair_Display({
-	weight: ['400', '600'],
-	style: 'italic',
-});
 const nunito = Nunito({ weight: ['700', '800'] });
 
 export default function Home() {
