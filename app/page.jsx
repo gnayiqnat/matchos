@@ -6,17 +6,17 @@ import {
 	Typography,
 } from '@heroui/react';
 import { ArrowRight, MapPin } from 'lucide-react';
-import {
-	Outfit,
-	Inter,
-	Nunito,
-} from 'next/font/google';
+import { Outfit, Inter, Nunito, Playfair_Display } from 'next/font/google';
 import Image from 'next/image';
 import { FaWaze } from 'react-icons/fa';
 
 const outfit = Outfit({ weight: ['300', '400', '500', '600'] });
 const inter = Inter({ weight: ['300', '400', '500', '600'] });
 const nunito = Nunito({ weight: ['700', '800'] });
+const playfairDisplay = Playfair_Display({
+	weight: ['400', '600'],
+	style: 'italic',
+});
 
 export default function Home() {
 	return (
