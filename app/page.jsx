@@ -240,13 +240,13 @@ export default function Home() {
 								<Typography
 									className={`${outfit.className} font-base max-w-100 text-lg/5 text-foreground/80 text-balance`}
 								>
-									25g Doritos loaded with your choice of toppings and sauces.{' '}
+									25g Doritos loaded with your choice of toppings and sauces.
 								</Typography>
 							</div>
 							<Typography
 								className={`${outfit.className} text-lg font-bold text-accent `}
 							>
-								RM 11.70
+								RM 9.70
 							</Typography>
 						</div>
 						<div className='flex flex-col px-7 py-5 bg-accent/5 rounded-xl gap-2'>
@@ -266,13 +266,13 @@ export default function Home() {
 							<Typography
 								className={`${outfit.className} text-lg font-bold text-accent`}
 							>
-								RM 13.90
+								RM 9.90
 							</Typography>
 						</div>
 					</div>
 					<div className='flex flex-row'>
 						<a
-							href='https://bit.ly/3SLpBRA'
+							href='https://bit.ly/4AcAHQx'
 							target='_blank'
 							rel='noopener noreferrer'
 						>
