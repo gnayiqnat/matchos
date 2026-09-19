@@ -266,7 +266,7 @@ export default function Home() {
 							<Typography
 								className={`${outfit.className} text-lg font-bold text-accent`}
 							>
-								RM 9.90
+								RM 11.90
 							</Typography>
 						</div>
 					</div>
