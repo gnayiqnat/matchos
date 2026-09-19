@@ -272,7 +272,7 @@ export default function Home() {
 					</div>
 					<div className='flex flex-row'>
 						<a
-							href='https://bit.ly/4AcAHQx'
+							href='https://bit.ly/4yIFgk1'
 							target='_blank'
 							rel='noopener noreferrer'
 						>
